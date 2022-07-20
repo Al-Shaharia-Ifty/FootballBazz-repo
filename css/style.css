@@ -14,10 +14,10 @@
   width: 80%;
   margin-top: 70px;
   display: flex;
+  align-items: center;
   margin-bottom: 50px;
   background-color: #161616;
   border-radius: 25px;
-  align-items: center;
 }
 
 .left-part {
@@ -263,4 +263,100 @@
 #instagram:hover {
   background-color: yellow;
   color: black;
+}
+
+/* responsive tab view */
+
+@media only screen and (min-width: 689px) and (max-width: 992px) {
+  .left-part h1 {
+    font-size: 25px;
+  }
+  .left-part p {
+    height: 50px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+  .content {
+    display: block;
+  }
+  .navbar {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    height: auto;
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  .link button {
+    margin: o;
+  }
+  .items {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .view button {
+    visibility: visible;
+    margin-bottom: 50px;
+  }
+}
+
+/* responsive mobile view */
+
+@media only screen and (max-width: 688px) {
+  .banner-info {
+    display: block;
+  }
+  .left-part {
+    width: 100%;
+    padding: 20px 15px;
+  }
+  .left-part h1 {
+    font-size: 25px;
+    text-align: center;
+  }
+  .left-part p {
+    height: 25px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    padding: 20px;
+  }
+  .left-part button {
+    text-align: center;
+  }
+  .right-part {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .right-part img {
+    width: 75%;
+    float: none;
+  }
+  .content {
+    display: block;
+  }
+  .navbar {
+    width: 100%;
+    background-color: white;
+  }
+  .items {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .underline {
+    margin-top: 0px;
+  }
+  .underline hr {
+    visibility: hidden;
+  }
+  .footer-info {
+    display: block;
+  }
+  .footer-info p {
+    text-align: center;
+    margin-top: 5px;
+    padding-left: 0;
+  }
 }
