@@ -92,6 +92,12 @@
   border: 0;
   background-color: white;
   cursor: pointer;
+  transition: 0.4s;
+}
+
+.link button:hover {
+  background-color: red;
+  color: white;
 }
 
 #active {
@@ -112,6 +118,11 @@
   margin-bottom: 20px;
   border: 1px solid grey;
   border-radius: 10px;
+  transition: 0.4s;
+}
+
+.item:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .item img {
@@ -121,8 +132,10 @@
 .item button {
   background-color: white;
   padding: 5px 10px;
+  border: 0.5px solid grey;
   border-radius: 5px;
   margin-bottom: 10px;
+  cursor: pointer;
 }
 
 .item-info {
@@ -141,6 +154,25 @@
 
 .icon p {
   margin-right: 10px;
+}
+
+.flag {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flag img {
+  padding: 5px;
+  margin-top: 20px;
+}
+
+.flag-info {
+  text-align: center;
+  margin-top: 20px;
+}
+.flag-info p {
+  margin-top: 10px;
 }
 
 .view {
@@ -188,6 +220,7 @@
 
 .footer-info p {
   padding-left: 50px;
+  cursor: pointer;
 }
 
 .social {
@@ -197,6 +230,37 @@
 }
 
 .social i {
-  padding-left: 20px;
+  padding: 10px;
   font-size: 30px;
+  border-radius: 10px;
+}
+
+#youtube {
+  color: red;
+  transition: 0.4s;
+}
+
+#youtube:hover {
+  background-color: red;
+  color: white;
+}
+
+#facebook {
+  color: blue;
+  transition: 0.4s;
+}
+
+#facebook:hover {
+  background-color: blue;
+  color: white;
+}
+
+#instagram {
+  color: yellow;
+  transition: 0.4s;
+}
+
+#instagram:hover {
+  background-color: yellow;
+  color: black;
 }
