@@ -162,23 +162,41 @@
 .footer {
   background-color: #161616;
   color: white;
-  text-align: center;
 }
 
 .footer h1 {
-  padding-top: 130px;
+  padding-top: 50px;
+  text-align: center;
 }
 
-.footer hr {
-  width: 50%;
-}
-
-.footer div {
+.underline {
   display: flex;
-  justify-content: space-evenly;
-  width: 80%;
+  justify-content: center;
+  margin-top: 50px;
 }
 
-.footer h1 {
-  text-align: center;
+.underline hr {
+  width: 90%;
+}
+
+.footer-info {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  padding-bottom: 30px;
+}
+
+.footer-info p {
+  padding-left: 50px;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 30px;
+}
+
+.social i {
+  padding-left: 20px;
+  font-size: 30px;
 }
