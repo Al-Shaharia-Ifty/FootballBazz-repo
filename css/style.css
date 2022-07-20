@@ -5,9 +5,19 @@
 }
 
 /* banner section */
+@keyframes color {
+  0% {
+    background-color: #e6bf77;
+  }
+  100% {
+    background-color: #16b895;
+  }
+}
+
 .banner {
   display: flex;
   justify-content: center;
+  position: relative;
 }
 
 .banner-info {
@@ -16,8 +26,11 @@
   display: flex;
   align-items: center;
   margin-bottom: 50px;
-  background-color: #161616;
+  background-color: #e6bf77;
   border-radius: 25px;
+}
+.banner-info:hover {
+  animation: color 1s ease-in-out 0.5s infinite alternate;
 }
 
 .left-part {
@@ -37,7 +50,7 @@
 }
 
 .left-part button {
-  background-color: rgb(206, 50, 11);
+  background-color: rgb(184, 54, 22);
   color: white;
   padding: 15px 25px;
   border: 0;
@@ -49,7 +62,7 @@
   width: 50%;
 }
 
-.right-part img {
+#brazil {
   float: right;
   width: 90%;
   padding: 10px;
@@ -70,8 +83,9 @@
 /* navbar */
 
 .navbar {
-  width: 25%;
-  background-color: #161616;
+  width: 312px;
+  height: 312px;
+  background-color: #acce8c;
   border-radius: 10px;
   height: 210px;
   margin-right: 20px;
@@ -96,13 +110,13 @@
 }
 
 .link button:hover {
-  background-color: red;
-  color: white;
+  background-color: rgb(221, 107, 107);
+  color: black;
 }
 
 #active {
-  background-color: red;
-  color: white;
+  background-color: rgb(221, 107, 107);
+  color: black;
 }
 
 /* item-section */
@@ -344,12 +358,6 @@
     width: 100%;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-  }
-  .underline {
-    margin-top: 0px;
-  }
-  .underline hr {
-    visibility: hidden;
   }
   .footer-info {
     display: block;
